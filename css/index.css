@@ -787,6 +787,136 @@ img {
   }
 }
 
+.requests {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .requests {
+    padding-left: 9.375%;
+    padding-right: 9.375%;
+    padding-top: 18.75%;
+    padding-bottom: 9.375%;
+  }
+}
+@media (min-width: 768px) {
+  .requests {
+    padding-top: 5.9027777778%;
+    padding-bottom: 5.9027777778%;
+    padding-left: 7.7777777778%;
+    padding-right: 7.7777777778%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    align-items: center;
+  }
+}
+.requests__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.requests__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .requests__image img {
+    -o-object-position: 50% 0%;
+       object-position: 50% 0%;
+  }
+}
+@media (min-width: 768px) {
+  .requests__image img {
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+.requests__main-title {
+  color: #fff;
+  position: relative;
+  line-height: 1.2;
+}
+@media (max-width: 767px) {
+  .requests__main-title {
+    font-size: 7.8vw;
+    margin-bottom: 4vw;
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .requests__main-title {
+    grid-column: 1/8;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 767px) {
+  .requests__arrow {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .requests__arrow {
+    width: 14.7vw;
+    height: auto;
+    position: absolute;
+    top: 53.2%;
+    left: 33%;
+  }
+}
+.requests__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .requests__list {
+    row-gap: 3.125vw;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .requests__list {
+    row-gap: 2vw;
+    grid-column: 8/13;
+    grid-row: 1/2;
+  }
+}
+.requests__item {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #d9d9d9;
+}
+@media (max-width: 767px) {
+  .requests__item {
+    border-radius: 1.17vw;
+    padding: 3.125vw;
+    font-size: 2.937vw;
+    letter-spacing: 0.088vw;
+  }
+}
+@media (min-width: 768px) {
+  .requests__item {
+    border-radius: 0.7vw;
+    padding: 1.5vw 2vw;
+    font-size: 1.736vw;
+    letter-spacing: 0.052vw;
+  }
+}
+
 @media (max-width: 767px) {
   .methods {
     padding-left: 9.375%;

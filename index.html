@@ -145,6 +145,50 @@
           <h4 class="education__small-title small-title">Кожного року</h4>
           <p class="education__text text">підвищення кваліфікації у форматі додаткової освіти.</p>
         </section>
+        <section class="requests">
+          <div class="requests__image">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./img/requests.jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                type="image/webp"
+                srcset="./img/requests_mob.jpg"
+                media="(min-width: 200px)"
+              />
+              <img
+                src="./img/requests_mob.jpg"
+                :alt="requests"
+              />
+            </picture>
+          </div>
+          <h2 class="requests__main-title main-title">
+            Запити з <br />
+            якими до мене <br />
+            звертаються
+          </h2>
+          <div class="requests__arrow">
+            <img
+              src="./img/icons/arrow-white.svg"
+              alt="arrow"
+            />
+          </div>
+
+          <ul class="requests__list">
+            <li class="requests__item">сімейні конфлікти</li>
+            <li class="requests__item">вікові кризи</li>
+            <li class="requests__item">стосунки «батьки-діти»</li>
+            <li class="requests__item">усиновлення</li>
+            <li class="requests__item">діти та повторні шлюби</li>
+            <li class="requests__item">втрата близьких</li>
+            <li class="requests__item">емоційне вигорання</li>
+            <li class="requests__item">батьківська компетентність</li>
+            <li class="requests__item">життєві кризи</li>
+            <li class="requests__item">профорієнтація</li>
+          </ul>
+        </section>
         <section class="methods">
           <h2 class="methods__main-title main-title">методики</h2>
           <ul class="methods__list">
@@ -193,4 +237,5 @@
 <!-- .hero пиксель перфект резина 80мин-->
 <!-- .about, .services резина 45мин-->
 <!-- .education резина 35мин-->
+<!-- .requests резина 25мин-->
 <!-- .methods резина 13мин-->
