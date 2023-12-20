@@ -19,3 +19,45 @@ main {
 img {
   max-width: 100%;
 }
+.title {
+  text-transform: uppercase;
+  font-family: $ff2;
+  @media (max-width: 767px) {
+    font-size: 11.875vw;
+    letter-spacing: 0.03vw;
+  }
+  @media (min-width: 768px) {
+    font-size: 6.25vw;
+    letter-spacing: 0.0156vw;
+  }
+  display: flex;
+  flex-direction: column;
+  :first-child {
+    align-self: flex-start;
+  }
+  :last-child {
+    align-self: flex-end;
+  }
+}
+.text-container {
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 767px) {
+    row-gap: 0.7vw;
+  }
+  @media (min-width: 768px) {
+    row-gap: 0.28vw;
+  }
+}
+.text {
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    font-size: 3.44vw;
+    letter-spacing: 0.01vw;
+  }
+  @media (min-width: 768px) {
+    letter-spacing: 0.05vw;
+    font-size: 1.736vw;
+  }
+}
