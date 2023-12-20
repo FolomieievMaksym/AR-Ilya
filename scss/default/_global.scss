@@ -15,6 +15,20 @@ body {
 }
 main {
   flex: 1 1 auto;
+  display: grid;
+  @media (max-width: 767px) {
+    row-gap: 9.375vw;
+  }
+  @media (min-width: 768px) {
+    row-gap: 5.9vw;
+  }
+  @media (min-width: 768px) {
+    section {
+      &:first-child {
+        margin-bottom: -5.9vw;
+      }
+    }
+  }
 }
 img {
   max-width: 100%;
@@ -40,7 +54,6 @@ img {
   }
 }
 .text-container {
-  line-height: 1.5;
   display: flex;
   flex-direction: column;
   @media (max-width: 767px) {
@@ -51,6 +64,7 @@ img {
   }
 }
 .text {
+  line-height: 1.5;
   text-transform: uppercase;
   @media (max-width: 767px) {
     font-size: 3.44vw;
@@ -59,5 +73,31 @@ img {
   @media (min-width: 768px) {
     letter-spacing: 0.05vw;
     font-size: 1.736vw;
+  }
+}
+
+.main-title {
+  font-family: $ff2;
+
+  @media (max-width: 767px) {
+    font-size: 14.06vw;
+    letter-spacing: 0.035vw;
+  }
+  @media (min-width: 768px) {
+    font-size: 6.25vw;
+    letter-spacing: 0.0156vw;
+  }
+}
+
+.small-title {
+  font-family: $ff2;
+
+  @media (max-width: 767px) {
+    font-size: 7.5vw;
+    letter-spacing: 0.0187vw;
+  }
+  @media (min-width: 768px) {
+    font-size: 4.86vw;
+    letter-spacing: 0.0121vw;
   }
 }
