@@ -76,11 +76,19 @@
         content: "";
         display: inline-block;
       }
+      &.black {
+        color: $black;
+      }
     }
     &:nth-child(1) {
       a {
         &:before {
           background: url("../img/icons/instagram.svg") center/contain no-repeat;
+        }
+      }
+      a.black {
+        &:before {
+          background: url("../img/icons/instagram-black.svg") center/contain no-repeat;
         }
       }
     }
@@ -90,11 +98,21 @@
           background: url("../img/icons/telegram.svg") center/contain no-repeat;
         }
       }
+      a.black {
+        &:before {
+          background: url("../img/icons/telegram-black.svg") center/contain no-repeat;
+        }
+      }
     }
     &:nth-child(3) {
       a {
         &:before {
           background: url("../img/icons/facebook.svg") center/contain no-repeat;
+        }
+      }
+      a.black {
+        &:before {
+          background: url("../img/icons/facebook-black.svg") center/contain no-repeat;
         }
       }
     }
