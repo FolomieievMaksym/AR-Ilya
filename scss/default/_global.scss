@@ -18,6 +18,7 @@ main {
   display: grid;
   @media (max-width: 767px) {
     row-gap: 9.375vw;
+    row-gap: 20vw;
   }
   @media (min-width: 768px) {
     row-gap: 5.9vw;
