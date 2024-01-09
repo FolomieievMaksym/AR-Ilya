@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <main>
+      <main id="main">
         <header class="mobile-header">
           <img
             src="./img/logo-letters.svg"
@@ -25,7 +25,6 @@
             alt="logo Antonina Radchenko"
           />
           <img
-            id="burger"
             src="./img/icons/burger.svg"
             alt="menu"
           />
@@ -34,7 +33,7 @@
           <div class="mobile-menu__wrapper">
             <nav class="mobile-menu__nav">
               <a
-                href="#"
+                href="#main"
                 class="mobile-menu__link"
               >
                 <img
@@ -48,37 +47,37 @@
               </a>
               <a
                 class="mobile-menu__link"
-                href="#"
+                href="#about"
               >
                 про мене
               </a>
               <a
                 class="mobile-menu__link"
-                href="#"
+                href="#education"
               >
                 освіта
               </a>
               <a
                 class="mobile-menu__link"
-                href="#"
+                href="#requests"
               >
                 запити
               </a>
               <a
                 class="mobile-menu__link"
-                href="#"
+                href="#methods"
               >
                 методики
               </a>
               <a
                 class="mobile-menu__link"
-                href="#"
+                href="#service"
               >
                 формат
               </a>
               <a
                 class="mobile-menu__link"
-                href="#"
+                href="#contacts"
               >
                 контакти
               </a>
@@ -96,7 +95,7 @@
             <header class="header">
               <nav class="header__conatiner">
                 <a
-                  href="#"
+                  href="#main"
                   class="header__link"
                 >
                   <img
@@ -109,31 +108,31 @@
                   />
                 </a>
                 <a
-                  href="#"
+                  href="#education"
                   class="header__link"
                 >
                   освіта
                 </a>
                 <a
-                  href="#"
+                  href="#requests"
                   class="header__link"
                 >
                   запити
                 </a>
                 <a
-                  href="#"
+                  href="#methods"
                   class="header__link"
                 >
                   методики
                 </a>
                 <a
-                  href="#"
+                  href="#service"
                   class="header__link"
                 >
                   формат
                 </a>
                 <a
-                  href="#"
+                  href="#contacts"
                   class="header__link"
                 >
                   контакти
@@ -158,14 +157,17 @@
               </div>
             </h1>
             <a
-              href="#"
+              href="#about"
               class="hero__button btn"
             >
               ДЕТАЛЬНІШЕ
             </a>
           </div>
         </section>
-        <section class="about">
+        <section
+          class="about"
+          id="about"
+        >
           <h2 class="about__title title">
             <span>Про</span>
             <span>Мене</span>
@@ -188,7 +190,10 @@
             </p>
           </div>
         </section>
-        <section class="education">
+        <section
+          class="education"
+          id="education"
+        >
           <h2 class="education__main-title main-title">Освіта</h2>
           <h3 class="education__title education__title_first title">2003</h3>
           <p class="education__text education__text_first text">
@@ -215,7 +220,10 @@
           <h4 class="education__small-title small-title">Кожного року</h4>
           <p class="education__text text">підвищення кваліфікації у форматі додаткової освіти.</p>
         </section>
-        <section class="requests">
+        <section
+          class="requests"
+          id="requests"
+        >
           <div class="requests__image">
             <picture>
               <source
@@ -259,7 +267,10 @@
             <li class="requests__item">профорієнтація</li>
           </ul>
         </section>
-        <section class="methods">
+        <section
+          class="methods"
+          id="methods"
+        >
           <h2 class="methods__main-title main-title">методики</h2>
           <ul class="methods__list">
             <li class="methods__item">Психологічне інтерв’ю</li>
@@ -271,7 +282,10 @@
             <li class="methods__item">Фільмотерапія</li>
           </ul>
         </section>
-        <section class="service">
+        <section
+          class="service"
+          id="service"
+        >
           <h2 class="service__title title">
             <span>Формат</span>
             <span>Послуг</span>
@@ -297,7 +311,10 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section
+          class="contacts"
+          id="contacts"
+        >
           <div class="contacts__image">
             <img
               src="./img/contacts.jpg"
@@ -318,7 +335,7 @@
         <footer class="footer">
           <div class="footer__content footer-content">
             <a
-              href="#"
+              href="#main"
               class="footer-content__logo"
             >
               <img
@@ -332,31 +349,31 @@
             </a>
             <nav class="footer-content__menu">
               <a
-                href="#"
+                href="#education"
                 class="footer-content__link"
               >
                 освіта
               </a>
               <a
-                href="#"
+                href="#requests"
                 class="footer-content__link"
               >
                 запити
               </a>
               <a
-                href="#"
+                href="#methods"
                 class="footer-content__link"
               >
                 методики
               </a>
               <a
-                href="#"
+                href="#service"
                 class="footer-content__link"
               >
                 формат
               </a>
               <a
-                href="#"
+                href="#contacts"
                 class="footer-content__link"
               >
                 контакти
@@ -390,6 +407,7 @@
         </footer>
       </main>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
 <!-- Выгрузка графики 8мин -->

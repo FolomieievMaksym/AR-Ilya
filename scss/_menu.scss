@@ -1,5 +1,16 @@
 .mobile-header {
   @media (max-width: 767px) {
+    &.visible {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1vw;
+    }
+    background-color: #fff;
+    &.white {
+      background-color: transparent;
+    }
+    display: none;
     padding-top: 4vw;
     padding-bottom: 4vw;
     padding-left: percent(30, 320);
@@ -9,10 +20,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 1vw;
     img {
       &:nth-child(1) {
         width: 10vw;
@@ -32,7 +39,6 @@
 
 .mobile-menu {
   @media (max-width: 767px) {
-    //   display: none;
     display: none;
     position: fixed;
     z-index: 5;
@@ -43,6 +49,9 @@
     width: 100vw;
     height: 100vh;
     background-color: #fcf9f4;
+    &.visible {
+      display: block;
+    }
     // .mobile-menu__wrapper
 
     &__wrapper {

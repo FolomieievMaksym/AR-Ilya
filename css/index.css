@@ -272,6 +272,8 @@ img {
 
 @media (max-width: 767px) {
   .mobile-header {
+    background-color: #fff;
+    display: none;
     padding-top: 4vw;
     padding-bottom: 4vw;
     padding-left: 9.375%;
@@ -281,11 +283,16 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+  }
+  .mobile-header.visible {
     display: flex;
     justify-content: space-between;
     align-items: center;
     -moz-column-gap: 1vw;
          column-gap: 1vw;
+  }
+  .mobile-header.white {
+    background-color: transparent;
   }
   .mobile-header img:nth-child(1) {
     width: 10vw;
@@ -315,6 +322,9 @@ img {
     width: 100vw;
     height: 100vh;
     background-color: #fcf9f4;
+  }
+  .mobile-menu.visible {
+    display: block;
   }
   .mobile-menu__wrapper {
     max-height: 100vh;
@@ -1005,6 +1015,8 @@ img {
   .methods {
     padding-left: 9.375%;
     padding-right: 9.375%;
+    padding-top: 20vw;
+    margin-top: -20vw;
   }
 }
 .methods__main-title {
